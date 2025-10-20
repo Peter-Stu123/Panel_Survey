@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.isoft.panelsurvey.mapper.SurveyQuestionMapper">
+
+    <resultMap id="BaseResultMap" type="org.isoft.panelsurvey.entity.SurveyQuestion">
+        <id column="id" property="id"/>
+        <result column="questionnaire_id" property="questionnaireId"/>
+        <result column="section" property="section"/>
+        <result column="question_no" property="questionNo"/>
+        <result column="question_type" property="questionType"/>
+        <result column="question_text" property="questionText"/>
+        <result column="question_description" property="questionDescription"/>
+        <result column="options" property="options"/>
+        <result column="is_required" property="isRequired"/>
+        <result column="logic_jump" property="logicJump"/>
+        <result column="original_text" property="originalText"/>
+        <result column="refined_text" property="refinedText"/>
+        <result column="is_refined" property="isRefined"/>
+        <result column="display_order" property="displayOrder"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT * FROM survey_question WHERE id = #{id}
+    </select>
+
+    <select id="selectByQuestionnaireId" resultMap="BaseResultMap">
+        SELECT * FROM survey_question WHERE questionnaire_id = #{questionnaireId} ORDER BY display_order
+    </select>
+
+    <insert id="insert" parameterType="org.isoft.panelsurvey.entity.SurveyQuestion" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO survey_question (
+            questionnaire_id, section, question_no, question_type, question_text,
+            question_description, options, is_required, logic_jump, original_text,
+            refined_text, is_refined, display_order
+        ) VALUES (
+            #{questionnaireId}, #{section}, #{questionNo}, #{questionType}, #{questionText},
+            #{questionDescription}, #{options}, #{isRequired}, #{logicJump}, #{originalText},
+            #{refinedText}, #{isRefined}, #{displayOrder}
+        )
+    </insert>
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        INSERT INTO survey_question (
+            questionnaire_id, section, question_no, question_type, question_text,
+            question_description, options, is_required, logic_jump, original_text,
+            refined_text, is_refined, display_order
+        ) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (
+                #{item.questionnaireId}, #{item.section}, #{item.questionNo}, #{item.questionType}, #{item.questionText},
+                #{item.questionDescription}, #{item.options}, #{item.isRequired}, #{item.logicJump}, #{item.originalText},
+                #{item.refinedText}, #{item.isRefined}, #{item.displayOrder}
+            )
+        </foreach>
+    </insert>
+
+    <update id="update" parameterType="org.isoft.panelsurvey.entity.SurveyQuestion">
+        UPDATE survey_question
+        <set>
+            <if test="section != null">section = #{section},</if>
+            <if test="questionNo != null">question_no = #{questionNo},</if>
+            <if test="questionType != null">question_type = #{questionType},</if>
+            <if test="questionText != null">question_text = #{questionText},</if>
+            <if test="questionDescription != null">question_description = #{questionDescription},</if>
+            <if test="options != null">options = #{options},</if>
+            <if test="isRequired != null">is_required = #{isRequired},</if>
+            <if test="logicJump != null">logic_jump = #{logicJump},</if>
+            <if test="originalText != null">original_text = #{originalText},</if>
+            <if test="refinedText != null">refined_text = #{refinedText},</if>
+            <if test="isRefined != null">is_refined = #{isRefined},</if>
+            <if test="displayOrder != null">display_order = #{displayOrder},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM survey_question WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByQuestionnaireId">
+        DELETE FROM survey_question WHERE questionnaire_id = #{questionnaireId}
+    </delete>
+
+    <update id="updateRefinedText">
+        UPDATE survey_question SET refined_text = #{refinedText}, is_refined = #{isRefined} WHERE id = #{id}
+    </update>
+
+</mapper>
+

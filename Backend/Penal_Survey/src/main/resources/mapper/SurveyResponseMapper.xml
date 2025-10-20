@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.isoft.panelsurvey.mapper.SurveyResponseMapper">
+
+    <resultMap id="BaseResultMap" type="org.isoft.panelsurvey.entity.SurveyResponse">
+        <id column="id" property="id"/>
+        <result column="questionnaire_id" property="questionnaireId"/>
+        <result column="respondent_code" property="respondentCode"/>
+        <result column="respondent_ip" property="respondentIp"/>
+        <result column="start_time" property="startTime"/>
+        <result column="submit_time" property="submitTime"/>
+        <result column="duration_seconds" property="durationSeconds"/>
+        <result column="is_completed" property="isCompleted"/>
+        <result column="device_type" property="deviceType"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT * FROM survey_response WHERE id = #{id}
+    </select>
+
+    <select id="selectByQuestionnaireId" resultMap="BaseResultMap">
+        SELECT * FROM survey_response WHERE questionnaire_id = #{questionnaireId} ORDER BY submit_time DESC
+    </select>
+
+    <select id="countByQuestionnaireId" resultType="int">
+        SELECT COUNT(*) FROM survey_response WHERE questionnaire_id = #{questionnaireId}
+    </select>
+
+    <select id="countCompletedByQuestionnaireId" resultType="int">
+        SELECT COUNT(*) FROM survey_response WHERE questionnaire_id = #{questionnaireId} AND is_completed = 1
+    </select>
+
+    <insert id="insert" parameterType="org.isoft.panelsurvey.entity.SurveyResponse" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO survey_response (
+            questionnaire_id, respondent_code, respondent_ip, start_time, submit_time,
+            duration_seconds, is_completed, device_type
+        ) VALUES (
+            #{questionnaireId}, #{respondentCode}, #{respondentIp}, #{startTime}, #{submitTime},
+            #{durationSeconds}, #{isCompleted}, #{deviceType}
+        )
+    </insert>
+
+    <update id="update" parameterType="org.isoft.panelsurvey.entity.SurveyResponse">
+        UPDATE survey_response
+        <set>
+            <if test="submitTime != null">submit_time = #{submitTime},</if>
+            <if test="durationSeconds != null">duration_seconds = #{durationSeconds},</if>
+            <if test="isCompleted != null">is_completed = #{isCompleted},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM survey_response WHERE id = #{id}
+    </delete>
+
+</mapper>
+

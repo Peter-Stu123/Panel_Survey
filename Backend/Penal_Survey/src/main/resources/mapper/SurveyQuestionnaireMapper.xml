@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.isoft.panelsurvey.mapper.SurveyQuestionnaireMapper">
+
+    <resultMap id="BaseResultMap" type="org.isoft.panelsurvey.entity.SurveyQuestionnaire">
+        <id column="id" property="id"/>
+        <result column="project_id" property="projectId"/>
+        <result column="title" property="title"/>
+        <result column="description" property="description"/>
+        <result column="introduction" property="introduction"/>
+        <result column="instruction" property="instruction"/>
+        <result column="version" property="version"/>
+        <result column="is_ai_reviewed" property="isAiReviewed"/>
+        <result column="ai_review_result" property="aiReviewResult"/>
+        <result column="ai_refined_content" property="aiRefinedContent"/>
+        <result column="status" property="status"/>
+        <result column="survey_url" property="surveyUrl"/>
+        <result column="qr_code_path" property="qrCodePath"/>
+        <!-- 问卷网集成字段 -->
+        <result column="wenjuan_short_id" property="wenjuanShortId"/>
+        <result column="wenjuan_project_id" property="wenjuanProjectId"/>
+        <result column="wenjuan_respondent_count" property="wenjuanRespondentCount"/>
+        <result column="last_sync_time" property="lastSyncTime"/>
+        <result column="is_wenjuan_published" property="isWenjuanPublished"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT * FROM survey_questionnaire WHERE id = #{id}
+    </select>
+
+    <select id="selectByProjectId" resultMap="BaseResultMap">
+        SELECT * FROM survey_questionnaire WHERE project_id = #{projectId} ORDER BY version DESC LIMIT 1
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT * FROM survey_questionnaire ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" parameterType="org.isoft.panelsurvey.entity.SurveyQuestionnaire" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO survey_questionnaire (
+            project_id, title, description, introduction, instruction, version,
+            is_ai_reviewed, ai_review_result, ai_refined_content, status, survey_url, qr_code_path,
+            wenjuan_short_id, wenjuan_project_id, wenjuan_respondent_count, last_sync_time, is_wenjuan_published
+        ) VALUES (
+            #{projectId}, #{title}, #{description}, #{introduction}, #{instruction}, #{version},
+            #{isAiReviewed}, #{aiReviewResult}, #{aiRefinedContent}, #{status}, #{surveyUrl}, #{qrCodePath},
+            #{wenjuanShortId}, #{wenjuanProjectId}, #{wenjuanRespondentCount}, #{lastSyncTime}, #{isWenjuanPublished}
+        )
+    </insert>
+
+    <update id="update" parameterType="org.isoft.panelsurvey.entity.SurveyQuestionnaire">
+        UPDATE survey_questionnaire
+        <set>
+            <if test="title != null">title = #{title},</if>
+            <if test="description != null">description = #{description},</if>
+            <if test="introduction != null">introduction = #{introduction},</if>
+            <if test="instruction != null">instruction = #{instruction},</if>
+            <if test="isAiReviewed != null">is_ai_reviewed = #{isAiReviewed},</if>
+            <if test="aiReviewResult != null">ai_review_result = #{aiReviewResult},</if>
+            <if test="aiRefinedContent != null">ai_refined_content = #{aiRefinedContent},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="surveyUrl != null">survey_url = #{surveyUrl},</if>
+            <if test="qrCodePath != null">qr_code_path = #{qrCodePath},</if>
+            <if test="wenjuanShortId != null">wenjuan_short_id = #{wenjuanShortId},</if>
+            <if test="wenjuanProjectId != null">wenjuan_project_id = #{wenjuanProjectId},</if>
+            <if test="wenjuanRespondentCount != null">wenjuan_respondent_count = #{wenjuanRespondentCount},</if>
+            <if test="lastSyncTime != null">last_sync_time = #{lastSyncTime},</if>
+            <if test="isWenjuanPublished != null">is_wenjuan_published = #{isWenjuanPublished},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM survey_questionnaire WHERE id = #{id}
+    </delete>
+
+    <update id="updateAiReviewStatus">
+        UPDATE survey_questionnaire SET is_ai_reviewed = #{isAiReviewed} WHERE id = #{id}
+    </update>
+
+    <update id="updateStatus">
+        UPDATE survey_questionnaire SET status = #{status} WHERE id = #{id}
+    </update>
+
+    <update id="updateById" parameterType="org.isoft.panelsurvey.entity.SurveyQuestionnaire">
+        UPDATE survey_questionnaire
+        SET wenjuan_respondent_count = #{wenjuanRespondentCount},
+            last_sync_time = NOW()
+        WHERE id = #{id}
+    </update>
+
+</mapper>
+

@@ -1,0 +1,265 @@
+2025-10-16T10:38:11.070+08:00  INFO 2952 --- [Panel_Survey] [main] org.isoft.PenalSurveyApplicationTests    : Starting PenalSurveyApplicationTests using Java 24 with PID 2952 (started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T10:38:11.073+08:00  INFO 2952 --- [Panel_Survey] [main] org.isoft.PenalSurveyApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T10:38:11.754+08:00  INFO 2952 --- [Panel_Survey] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T10:38:11.756+08:00  INFO 2952 --- [Panel_Survey] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T10:38:11.781+08:00  INFO 2952 --- [Panel_Survey] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-10-16T10:38:12.406+08:00  INFO 2952 --- [Panel_Survey] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-16T10:38:15.332+08:00  INFO 2952 --- [Panel_Survey] [main] org.isoft.PenalSurveyApplicationTests    : Started PenalSurveyApplicationTests in 4.532 seconds (process running for 5.297)
+2025-10-16T21:12:25.674+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:12:25.676+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:12:25.739+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-16T21:12:25.740+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-16T21:12:26.732+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:12:26.734+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:12:26.766+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:12:27.709+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:12:27.713+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:12:27.726+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:12:27.735+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:12:27.735+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:12:27.791+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:12:27.792+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2051 ms
+2025-10-16T21:12:28.360+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-16T21:12:28.815+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46c1c215
+2025-10-16T21:12:28.816+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-16T21:12:30.022+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-16T21:12:30.036+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-16T21:12:30.043+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Started PenalSurveyApplication in 4.709 seconds (process running for 5.5)
+2025-10-16T21:17:13.834+08:00  INFO 2952 --- [Panel_Survey] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-16T21:17:13.839+08:00  INFO 2952 --- [Panel_Survey] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-16T21:17:14.122+08:00  INFO 2952 --- [Panel_Survey] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-16T21:17:14.153+08:00  INFO 2952 --- [Panel_Survey] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-16T21:17:14.162+08:00  INFO 2952 --- [Panel_Survey] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-16T21:17:14.284+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:17:14.284+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:17:14.457+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:17:14.458+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:17:14.462+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:17:14.560+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:17:14.561+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:17:14.563+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:17:14.563+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:17:14.563+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:17:14.601+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:17:14.602+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 315 ms
+2025-10-16T21:17:14.766+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-16T21:17:14.777+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@736326b7
+2025-10-16T21:17:14.778+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-16T21:17:15.387+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-16T21:17:15.405+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-16T21:17:15.416+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Started PenalSurveyApplication in 1.156 seconds (process running for 290.874)
+2025-10-16T21:17:15.421+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-16T21:18:27.498+08:00  INFO 2952 --- [Panel_Survey] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-16T21:18:27.499+08:00  INFO 2952 --- [Panel_Survey] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-16T21:18:27.609+08:00  INFO 2952 --- [Panel_Survey] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-16T21:18:27.612+08:00  INFO 2952 --- [Panel_Survey] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-16T21:18:27.613+08:00  INFO 2952 --- [Panel_Survey] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-16T21:18:27.685+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:18:27.686+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:18:27.813+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:18:27.813+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:18:27.816+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:18:27.860+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:18:27.861+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:18:27.861+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:18:27.862+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:18:27.862+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:18:27.880+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:18:27.880+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 193 ms
+2025-10-16T21:18:27.929+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-16T21:18:27.933+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7193e5ba
+2025-10-16T21:18:27.933+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-16T21:18:28.040+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-16T21:18:28.045+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-16T21:18:28.048+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Started PenalSurveyApplication in 0.379 seconds (process running for 363.505)
+2025-10-16T21:18:28.048+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-16T21:24:42.464+08:00  INFO 2952 --- [Panel_Survey] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 3 deletions, 1 modification)
+2025-10-16T21:24:42.465+08:00  INFO 2952 --- [Panel_Survey] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-16T21:24:42.598+08:00  INFO 2952 --- [Panel_Survey] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-16T21:24:42.602+08:00  INFO 2952 --- [Panel_Survey] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-16T21:24:42.604+08:00  INFO 2952 --- [Panel_Survey] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-10-16T21:24:42.675+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:24:42.675+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:24:42.848+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:24:42.849+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:24:42.854+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:24:42.910+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:24:42.911+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:24:42.912+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:24:42.912+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:24:42.913+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:24:42.935+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:24:42.935+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2025-10-16T21:24:43.002+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-10-16T21:24:43.007+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33f20617
+2025-10-16T21:24:43.007+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-10-16T21:24:43.089+08:00  WARN 2952 --- [Panel_Survey] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'responseController': Unsatisfied dependency expressed through field 'questionnaireService': No qualifying bean of type 'org.isoft.panelsurvey.service.QuestionnaireService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-10-16T21:24:43.091+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-10-16T21:24:43.092+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-10-16T21:24:43.093+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-16T21:24:43.121+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-16T21:24:43.140+08:00 ERROR 2952 --- [Panel_Survey] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field questionnaireService in org.isoft.panelsurvey.controller.ResponseController required a bean of type 'org.isoft.panelsurvey.service.QuestionnaireService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.isoft.panelsurvey.service.QuestionnaireService' in your configuration.
+
+2025-10-16T21:24:44.599+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:24:44.600+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:24:44.754+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:24:44.754+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:24:44.759+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:24:44.807+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:24:44.808+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:24:44.809+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:24:44.809+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:24:44.809+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:24:44.835+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:24:44.835+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 234 ms
+2025-10-16T21:24:44.883+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-10-16T21:24:44.888+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ceab212
+2025-10-16T21:24:44.888+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-10-16T21:24:45.031+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-16T21:24:45.036+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-16T21:24:45.040+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Started PenalSurveyApplication in 0.455 seconds (process running for 740.497)
+2025-10-16T21:24:45.041+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-16T21:25:11.082+08:00  INFO 2952 --- [Panel_Survey] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 83 class path changes (0 additions, 83 deletions, 0 modifications)
+2025-10-16T21:25:11.084+08:00  INFO 2952 --- [Panel_Survey] [Thread-33] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-16T21:25:11.210+08:00  INFO 2952 --- [Panel_Survey] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-16T21:25:11.213+08:00  INFO 2952 --- [Panel_Survey] [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-10-16T21:25:11.215+08:00  INFO 2952 --- [Panel_Survey] [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-10-16T21:25:21.195+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:25:21.196+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:25:21.319+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:25:21.319+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:25:21.320+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:25:21.332+08:00  WARN 2952 --- [Panel_Survey] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.isoft.panelsurvey.mapper]' package. Please check your configuration.
+2025-10-16T21:25:21.360+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:25:21.361+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:25:21.361+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:25:21.361+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:25:21.362+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:25:21.383+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:25:21.383+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2025-10-16T21:25:21.451+08:00  WARN 2952 --- [Panel_Survey] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes\mapper\SurveyAnswerMapper.xml]'
+2025-10-16T21:25:21.452+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-16T21:25:21.482+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-16T21:25:21.484+08:00 ERROR 2952 --- [Panel_Survey] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes\mapper\SurveyAnswerMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.10.jar:3.4.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.10.jar:3.4.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.10.jar:3.4.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.10.jar:3.4.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.10.jar:3.4.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.10.jar:3.4.10]
+	at org.isoft.PenalSurveyApplication.main(PenalSurveyApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.10.jar:3.4.10]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes\mapper\SurveyAnswerMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes\mapper\SurveyAnswerMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:695) ~[mybatis-spring-3.0.5.jar:3.0.5]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:572) ~[mybatis-spring-3.0.5.jar:3.0.5]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:712) ~[mybatis-spring-3.0.5.jar:3.0.5]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189) ~[mybatis-spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes\mapper\SurveyAnswerMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.isoft.panelsurvey.entity.SurveyAnswer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.isoft.panelsurvey.entity.SurveyAnswer
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:98) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:693) ~[mybatis-spring-3.0.5.jar:3.0.5]
+	... 37 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.isoft.panelsurvey.entity.SurveyAnswer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.isoft.panelsurvey.entity.SurveyAnswer
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:222) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:214) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:206) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121) ~[mybatis-3.5.19.jar:3.5.19]
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.isoft.panelsurvey.entity.SurveyAnswer'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.isoft.panelsurvey.entity.SurveyAnswer
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101) ~[mybatis-3.5.19.jar:3.5.19]
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: org.isoft.panelsurvey.entity.SurveyAnswer
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322) ~[mybatis-3.5.19.jar:3.5.19]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124) ~[mybatis-3.5.19.jar:3.5.19]
+	... 45 common frames omitted
+
+2025-10-16T21:25:23.763+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Starting PenalSurveyApplication using Java 17.0.10 with PID 2952 (E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey\target\classes started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:25:23.763+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:25:23.903+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:25:23.904+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:25:23.910+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:25:23.958+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-16T21:25:23.959+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+2025-10-16T21:25:23.959+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-10-16T21:25:23.960+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-16T21:25:23.960+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-16T21:25:23.982+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-10-16T21:25:23.982+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 217 ms
+2025-10-16T21:25:24.053+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-10-16T21:25:24.057+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@405f442b
+2025-10-16T21:25:24.057+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-10-16T21:25:24.208+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-16T21:25:24.213+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-16T21:25:24.219+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] org.isoft.PenalSurveyApplication         : Started PenalSurveyApplication in 0.472 seconds (process running for 779.676)
+2025-10-16T21:25:24.221+08:00  INFO 2952 --- [Panel_Survey] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-16T21:25:25.034+08:00  INFO 15540 --- [Panel_Survey] [main] org.isoft.PenalSurveyApplicationTests    : Starting PenalSurveyApplicationTests using Java 24 with PID 15540 (started by TheKingA in E:\Panel_Survey\Panel_Survey\Backend\Penal_Survey)
+2025-10-16T21:25:25.035+08:00  INFO 15540 --- [Panel_Survey] [main] org.isoft.PenalSurveyApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-10-16T21:25:25.661+08:00  INFO 15540 --- [Panel_Survey] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-16T21:25:25.663+08:00  INFO 15540 --- [Panel_Survey] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-16T21:25:25.691+08:00  INFO 15540 --- [Panel_Survey] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-10-16T21:25:26.227+08:00  INFO 15540 --- [Panel_Survey] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-16T21:25:26.368+08:00  INFO 15540 --- [Panel_Survey] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dfc2a4
+2025-10-16T21:25:26.370+08:00  INFO 15540 --- [Panel_Survey] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-16T21:25:27.405+08:00  INFO 15540 --- [Panel_Survey] [main] org.isoft.PenalSurveyApplicationTests    : Started PenalSurveyApplicationTests in 2.602 seconds (process running for 3.424)
+2025-10-16T21:25:27.970+08:00  INFO 15540 --- [Panel_Survey] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.isoft.RedisConnectionTest]: RedisConnectionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-16T21:25:27.973+08:00  INFO 15540 --- [Panel_Survey] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.isoft.PenalSurveyApplication for test class org.isoft.RedisConnectionTest
+2025-10-16T21:25:28.341+08:00  INFO 15540 --- [Panel_Survey] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-16T21:25:28.346+08:00  INFO 15540 --- [Panel_Survey] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

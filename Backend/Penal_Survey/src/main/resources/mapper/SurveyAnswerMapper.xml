@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.isoft.panelsurvey.mapper.SurveyAnswerMapper">
+
+    <resultMap id="BaseResultMap" type="org.isoft.panelsurvey.entity.SurveyAnswer">
+        <id column="id" property="id"/>
+        <result column="response_id" property="responseId"/>
+        <result column="question_id" property="questionId"/>
+        <result column="answer_value" property="answerValue"/>
+        <result column="answer_text" property="answerText"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT * FROM survey_answer WHERE id = #{id}
+    </select>
+
+    <select id="selectByResponseId" resultMap="BaseResultMap">
+        SELECT * FROM survey_answer WHERE response_id = #{responseId}
+    </select>
+
+    <select id="selectByQuestionId" resultMap="BaseResultMap">
+        SELECT * FROM survey_answer WHERE question_id = #{questionId}
+    </select>
+
+    <insert id="insert" parameterType="org.isoft.panelsurvey.entity.SurveyAnswer" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO survey_answer (response_id, question_id, answer_value, answer_text)
+        VALUES (#{responseId}, #{questionId}, #{answerValue}, #{answerText})
+    </insert>
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        INSERT INTO survey_answer (response_id, question_id, answer_value, answer_text) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.responseId}, #{item.questionId}, #{item.answerValue}, #{item.answerText})
+        </foreach>
+    </insert>
+
+    <delete id="deleteById">
+        DELETE FROM survey_answer WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByResponseId">
+        DELETE FROM survey_answer WHERE response_id = #{responseId}
+    </delete>
+
+</mapper>
+

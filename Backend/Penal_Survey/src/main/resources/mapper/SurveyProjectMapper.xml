@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.isoft.panelsurvey.mapper.SurveyProjectMapper">
+
+    <resultMap id="BaseResultMap" type="org.isoft.panelsurvey.entity.SurveyProject">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="project_name" property="projectName"/>
+        <result column="objective_type" property="objectiveType"/>
+        <result column="disease_name" property="diseaseName"/>
+        <result column="intervention_name" property="interventionName"/>
+        <result column="comparison_name" property="comparisonName"/>
+        <result column="patient_description" property="patientDescription"/>
+        <result column="outcome_list" property="outcomeList"/>
+        <result column="intervention_details" property="interventionDetails"/>
+        <result column="comparison_details" property="comparisonDetails"/>
+        <result column="side_effects" property="sideEffects"/>
+        <result column="additional_info" property="additionalInfo"/>
+        <result column="survey_duration" property="surveyDuration"/>
+        <result column="target_respondents" property="targetRespondents"/>
+        <result column="step_status" property="stepStatus"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT * FROM survey_project WHERE id = #{id}
+    </select>
+
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        SELECT * FROM survey_project WHERE user_id = #{userId} ORDER BY create_time DESC
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT * FROM survey_project ORDER BY create_time DESC
+    </select>
+
+    <insert id="insert" parameterType="org.isoft.panelsurvey.entity.SurveyProject" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO survey_project (
+            user_id, project_name, objective_type, disease_name, intervention_name, 
+            comparison_name, patient_description, outcome_list, intervention_details, 
+            comparison_details, side_effects, additional_info, survey_duration, 
+            target_respondents, step_status, status
+        ) VALUES (
+            #{userId}, #{projectName}, #{objectiveType}, #{diseaseName}, #{interventionName}, 
+            #{comparisonName}, #{patientDescription}, #{outcomeList}, #{interventionDetails}, 
+            #{comparisonDetails}, #{sideEffects}, #{additionalInfo}, #{surveyDuration}, 
+            #{targetRespondents}, #{stepStatus}, #{status}
+        )
+    </insert>
+
+    <update id="update" parameterType="org.isoft.panelsurvey.entity.SurveyProject">
+        UPDATE survey_project
+        <set>
+            <if test="projectName != null">project_name = #{projectName},</if>
+            <if test="objectiveType != null">objective_type = #{objectiveType},</if>
+            <if test="diseaseName != null">disease_name = #{diseaseName},</if>
+            <if test="interventionName != null">intervention_name = #{interventionName},</if>
+            <if test="comparisonName != null">comparison_name = #{comparisonName},</if>
+            <if test="patientDescription != null">patient_description = #{patientDescription},</if>
+            <if test="outcomeList != null">outcome_list = #{outcomeList},</if>
+            <if test="interventionDetails != null">intervention_details = #{interventionDetails},</if>
+            <if test="comparisonDetails != null">comparison_details = #{comparisonDetails},</if>
+            <if test="sideEffects != null">side_effects = #{sideEffects},</if>
+            <if test="additionalInfo != null">additional_info = #{additionalInfo},</if>
+            <if test="surveyDuration != null">survey_duration = #{surveyDuration},</if>
+            <if test="targetRespondents != null">target_respondents = #{targetRespondents},</if>
+            <if test="stepStatus != null">step_status = #{stepStatus},</if>
+            <if test="status != null">status = #{status},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM survey_project WHERE id = #{id}
+    </delete>
+
+    <update id="updateStepStatus">
+        UPDATE survey_project SET step_status = #{stepStatus} WHERE id = #{id}
+    </update>
+
+    <update id="updateStatus">
+        UPDATE survey_project SET status = #{status} WHERE id = #{id}
+    </update>
+
+</mapper>
+
